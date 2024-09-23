@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Assets/favicon-32x32.png" type="image/png" />
+    <title>DF / 24</title>
+
+    <!-- Google Fonts Import -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Macondo&display=swap");
+    </style>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Header & Navigation Bar -->
+      <header>
+        <nav>
+          <!-- Logo -->
+          <div class="logo">DF <span>.</span></div>
+
+          <!-- Navigation Menu -->
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#tech">TECH</a></li>
+            <li><a href="#about">blog</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+          </ul>
+
+          <!-- Contact Button -->
+          <button onclick="window.location.href='#contact'" id="nav-b">
+            Contact me
+          </button>
+
+          <!-- Mobile Menu Icon -->
+          <i id="open" class="fa-solid fa-bars"></i>
+
+          <!-- Sidebar for Mobile Navigation -->
+          <ul class="sidebar">
+            <i id="close" class="fa-solid fa-circle-xmark"></i>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#tech">TECH</a></li>
+            <li><a href="#about">blog</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Home Section -->
+      <section class="home" id="home">
+        <h1 id="home-h1">Dua <span>Fatima. </span></h1>
+        <p id="home-p">
+          I'm a Frontend Developer, <br />
+          Graphic & Web Designer
+        </p>
+        <a id="home-b" href="Assets/Dua Fatima Resume.pdf" download>
+          <button>Resume</button>
+        </a>
+      </section>
+
+      <!-- Tech Section -->
+      <section class="tech" id="tech">
+        <div class="tech-img"></div>
+
+        <div class="tech-content">
+          <h2 id="tech-h2">Explore My Tech Arsenal</h2>
+          <p id="tech-p">The software that powers my work</p>
+
+          <!-- Tech Icons -->
+          <div class="tech-icons">
+            <img id="tech-image" src="Assets/vs.png" alt="Visual Studio" />
+            <img id="tech-image" src="Assets/next.png" alt="Next.js" />
+            <img id="tech-image" src="Assets/node.png" alt="Node.js" />
+            <img id="tech-image" src="Assets/discord.png" alt="Discord" />
+            <img id="tech-image" src="Assets/ai.png" alt="Adobe Illustrator" />
+            <img id="tech-image" src="Assets/ms.png" alt="Microsoft" />
+            <img id="tech-image" src="Assets/figma.png" alt="Figma" />
+            <img id="tech-image" src="Assets/canva.png" alt="Canva" />
+            <img id="tech-image" src="Assets/adobe.png" alt="Adobe" />
+            <img id="tech-image" src="Assets/yt.png" alt="YouTube" />
+            <img id="tech-image" src="Assets/google.png" alt="Google" />
+          </div>
+
+          <!-- Social Pages -->
+          <div class="tech-pages">
+            <div class="pages">
+              <img src="Assets/lI.png" alt="LinkedIn" />
+              <h4>LinkedIn</h4>
+              <a
+                href="https://www.linkedin.com/in/dua-fatima-%E2%9C%A8%F0%9F%87%B5%F0%9F%87%B8-906208258/"
+                target="_blank"
+              >
+                <button>Follow</button>
+              </a>
+            </div>
+
+            <div class="pages">
+              <img src="Assets/github.png" alt="GitHub" />
+              <h4>GitHub</h4>
+              <a
+                href="https://github.com/Dua-Fatima-khan/Dua-Fatima-khan/blob/main/README.md"
+                target="_blank"
+              >
+                <button>Follow</button>
+              </a>
+            </div>
+
+            <div class="pages">
+              <img src="Assets/ig.png" alt="Instagram" />
+              <h4>Instagram</h4>
+              <a
+                href="https://www.instagram.com/fatima_bint__ahmed?igsh=MXV2eWpveWNrczN2bQ=="
+                target="_blank"
+              >
+                <button>Follow</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="about-text">
+          <h3>Developer<span>.</span> Designer<span>.</span></h3>
+          <p>
+            I’m <span>Dua Fatima</span>, Highly skilled
+            <span>Frontend web developer</span> and <span>designer</span> with
+            expertise in HTML, CSS, JavaScript, TypeScript, and Tailwind CSS. I
+            excel at creating <span>user-friendly</span>, visually stunning
+            digital experiences that combine design excellence with technical
+            innovation, driving business growth through impactful
+            <span>web applications</span> and <span>websites</span>.
+          </p>
+          <button onclick="window.location.href='#contact'">Contact me</button>
+        </div>
+
+        <!-- About Image (empty placeholder) -->
+        <div class="about-img"></div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="service" id="service">
+        <h3 id="service-h3">My Services</h3>
+        <p id="service-p">
+          Providing high-quality solutions to transform your ideas into
+          impactful solutions.
+        </p>
+
+        <!-- Service Cards -->
+        <div class="cards">
+          <div class="card">
+            <h4>Web Development</h4>
+            <p>
+              Frontend Development, Responsive Website Creation, Interactive
+              Features, Database Integration, Website Cloning Projects
+            </p>
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <div class="card">
+            <h4>Web Designing</h4>
+            <p>
+              UI/UX Design, Creative Website Layouts, Custom Animations,
+              Mobile-Friendly Design, Web Aesthetics and Branding
+            </p>
+            <i class="fa-solid fa-palette"></i>
+          </div>
+
+          <div class="card">
+            <h4>Graphic Designing</h4>
+            <p>
+              Flyer Design, Logo Design, Brochure Design, Poster Design, Social
+              Media Graphics, Business Cards and Stationery, Brand Identity
+              Creation
+            </p>
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider Line -->
+      <div class="line"></div>
+
+      <!-- Projects Section -->
+      <section class="project" id="project">
+        <h3 id="project-h3">My Projects</h3>
+        <p id="project-p">
+          Showcase of recent projects in web development and design.
+        </p>
+
+        <!-- Project Boxes -->
+        <div class="project-box">
+          <div class="box">
+            <div class="box-img"><img src="Assets/card1.png" alt="" /></div>
+            <div class="box-text">
+              <h4>Award-Winning Website UI Clone</h4>
+              <p>
+                A pixel-perfect clone of the Sidcup Family Golf website,
+                replicating its design, booking system, and interactive
+                features.
+              </p>
+            </div>
+            <div class="box-skill">
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JS</a>
+              <a href="#">GSAP</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-img"><img src="Assets/card2.png" alt="" /></div>
+            <div class="box-text">
+              <h4>Personal Portfolio website</h4>
+              <p>
+                A custom-built full-stack portfolio showcasing my projects and
+                skills with a dynamic backend for easy content management.
+              </p>
+            </div>
+            <div class="box-skill">
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JS</a>
+              <a href="#">GSAP</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="contact-text">
+          <h2>Contact Me</h2>
+          <p>
+            Feel free to reach out for collaborations or inquiries. I will get
+            back to you soon!
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone (Optional)"
+          />
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Your Message Here..."
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+
+        <!-- Success Message Modal -->
+        <div class="successMessage"></div>
+        <div class="modal">
+          <div class="modal-content">
+            <p>Message sent successfully!</p>
+            <button id="closeModal">OK</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#tech">TECH</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#project">Projects</a></li>
+        </ul>
+        <p>&copy; 2024 <span>DF.</span> All rights reserved.</p>
+      </footer>
+    </main>
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+</html>
