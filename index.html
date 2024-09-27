@@ -27,8 +27,8 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body oncontextmenu="return false;">
+  <!-- oncontextmenu="return false; -->
+  <body">
     <main>
       <!-- Header & Navigation Bar -->
       <header>
@@ -56,24 +56,24 @@
           <!-- Sidebar for Mobile Navigation -->
           <ul class="sidebar">
             <i id="close" class="fa-solid fa-circle-xmark"></i>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#tech">TECH</a></li>
-            <li><a href="#about">blog</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a id="side-li" href="#home">HOME</a></li>
+            <li><a id="side-li" href="#tech">TECH</a></li>
+            <li><a id="side-li" href="#about">blog</a></li>
+            <li><a id="side-li" href="#service">Services</a></li>
+            <li><a id="side-li" href="#project">Projects</a></li>
+            <li><a id="side-li" href="#contact">contact</a></li>
           </ul>
         </nav>
       </header>
 
       <!-- Home Section -->
       <section class="home" id="home">
-        <h1 id="home-h1">Dua <span>Fatima. </span></h1>
+        <h1 id="home-h1">Dua <br><span>Fatima. </span></h1>
         <p id="home-p">
           I'm a Frontend Developer, <br />
           Graphic & Web Designer
         </p>
-        <a id="home-b" href="Assets/Dua Fatima Resume.pdf" download>
+        <a id="home-b" href="Assets/Dua Fatima Resume..pdf" download>
           <button>Resume</button>
         </a>
       </section>
@@ -198,9 +198,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Divider Line -->
-      <div class="line"></div>
 
       <!-- Projects Section -->
       <section class="project" id="project">

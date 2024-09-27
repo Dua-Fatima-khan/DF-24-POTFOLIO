@@ -2,12 +2,17 @@
 let menuO = document.getElementById("open");
 let menuC = document.getElementById("close");
 let sidebar = document.querySelector(".sidebar");
-
+let sideLi=document.querySelectorAll('#side-li')
 menuO.addEventListener("click", function () {
   sidebar.style.display = "block";
 });
 menuC.addEventListener("click", function () {
   sidebar.style.display = "none";
+});
+sideLi.forEach(function (li) {
+  li.addEventListener("click", function () {
+    sidebar.style.display = "none"; 
+  });
 });
 // contact form
 let modal = document.querySelector(".modal ");
