@@ -39,4 +39,12 @@ document
 close.addEventListener("click", function () {
   modal.style.display = "none";
 });
-
+// cursor
+let crsr = document.querySelector(".cursor");
+let crsrblr = document.querySelector(".cursorblur");
+document.addEventListener("mousemove", function (dets) {
+  crsr.style.left = dets.x + "px";
+  crsr.style.top = dets.y + "px";
+  crsrblr.style.left = dets.x - "150" + "px";
+  crsrblr.style.top = dets.y - "150" + "px";
+});
