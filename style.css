@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Segoe UI;
+
 }
 
 html,
@@ -10,14 +11,37 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  
 }
+
 main {
   background-color: #000;
   color: white;
+
 }
 
 ::-webkit-scrollbar {
-  width: 0%;
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(145deg,red,#7c060c,red,red,#7c060c,red,red,#7c060c,red,red,#7c060c,red,red,#7c060c,red,red,#7c060c,red);
+  border-radius: 8px;
+  border: .5px solid #000;
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px); /* Move upwards */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 nav {
   width: 100%;
@@ -44,6 +68,7 @@ nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 nav span {
@@ -86,6 +111,7 @@ footer li a {
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 nav button,
@@ -102,6 +128,7 @@ nav button,
   border-radius: 3px;
   cursor: pointer;
   transition: 0.2s all ease;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 nav button:hover,
 .about-text button:hover,
@@ -118,6 +145,7 @@ nav button:hover,
 }
 #open {
   display: none;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 /* sidebar */
 .sidebar {
@@ -138,6 +166,7 @@ nav button:hover,
 .sidebar li a {
   font-size: 1.2em;
   font-weight: 600;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 .sidebar li {
   height: 4em;
@@ -173,6 +202,7 @@ main .home {
   font-size: 12em;
   font-weight: 600;
   color: rgb(224, 221, 221);
+  animation: fadeIn 3s ease-in-out forwards;
 }
 .home h1 span {
   padding-left: 200px;
@@ -182,7 +212,10 @@ main .home p {
   font-weight: 500;
   text-align: right;
   text-transform: uppercase;
+  animation: fadeIn 3s ease-in-out forwards;
 }
+
+
 /*  */
 
 main .tech {
@@ -645,6 +678,9 @@ footer p span {
 }
 
 @media (max-width: 786px) {
+  ::-webkit-scrollbar{
+    width: 0%;
+  }
   .sidebar {
     width: 50%;
   }

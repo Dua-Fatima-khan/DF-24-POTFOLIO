@@ -39,3 +39,4 @@ document
 close.addEventListener("click", function () {
   modal.style.display = "none";
 });
+
